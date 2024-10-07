@@ -1,0 +1,43 @@
+/* Calendar.css */
+
+.calendar {
+    margin: 20px 0;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.calendar-day {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.calendar-day.today {
+    background-color: #ffeaa7; /* Highlight today's date */
+}
+
+.calendar-day.event-day {
+    background-color: #dff0d8; /* Highlight days with events */
+}
+
+.event-indicator {
+    display: block;
+    color: #f13c20;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.event-details {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f7f9fb;
+    border-radius: 5px;
+}

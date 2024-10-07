@@ -1,0 +1,57 @@
+/* src/components/Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #F13C20; /* Coral */
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #070707; /* Text color for links */
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+  padding-bottom: 5px; /* Space for the underline */
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #F13C20; /* Coral for the underline */
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%; /* Full width underline on hover */
+}
+
+
+.navbar-button {
+  background-color: #F13C20; /* Royal Purple */
+  color: #FFF; /* White text */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar-button:hover {
+  background-color: #e4553f; /* Darker shade for hover effect */
+}

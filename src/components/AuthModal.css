@@ -1,0 +1,80 @@
+/* src/components/AuthModal.css */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Darker semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure modal is above other content */
+  }
+  
+  .modal-content {
+    background: #fff; /* White background for the modal */
+    padding: 2rem;
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25); /* Softer shadow */
+    width: 400px; /* Set a width for the modal */
+    max-width: 90%; /* Responsive max width */
+    animation: slideIn 0.3s ease-out; /* Animation */
+  }
+  
+  h2 {
+    margin-bottom: 1.5rem; /* Spacing below the title */
+  }
+  
+  label {
+    display: block; /* Ensure labels are on their own lines */
+    margin: 0.5rem 0; /* Spacing between labels */
+  }
+  
+  input {
+    width: 100%; /* Full width for inputs */
+    padding: 0.5rem; /* Spacing inside inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 1rem; /* Spacing below inputs */
+  }
+  
+  button {
+    background-color: #71BC61; /* Your brand color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 0.7rem 1rem; /* Spacing inside buttons */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+  }
+  
+  button:hover {
+    background-color: #5fa74d; /* Darker shade for hover effect */
+  }
+  
+  .toggle-button {
+    background-color: transparent; /* No background */
+    color: #71BC61; /* Brand color */
+    margin-top: 1rem; /* Spacing above */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer on hover */
+  }
+  
+  .close-button {
+    margin-top: 1rem; /* Spacing above */
+    background-color: #ccc; /* Light gray for close */
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px); /* Start slightly above */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* End at original position */
+    }
+  }
+  
